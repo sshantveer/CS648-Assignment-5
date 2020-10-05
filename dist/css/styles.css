@@ -51,29 +51,36 @@ header {
   @media (min-width: 0) and (max-width: 500px) {
     header {
       padding-top: 10px; } }
-  header img {
-    max-width: 100%;
-    height: auto; }
-  header h1 {
-    color: #E65C43; }
-  header h2 {
-    color: #FFF; }
-  header h3 {
-    color: #666; }
-  header h1 {
-    font-weight: 100;
-    font-size: 4em;
-    line-height: 0; }
-  header h2 {
-    font-weight: 900;
-    font-size: 2.5em;
-    line-height: 0;
-    margin-bottom: 70px; }
-  header h3 {
-    font-weight: 400;
-    font-size: 2em;
-    line-height: 0;
-    margin-bottom: 50px; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+h1 {
+  color: #E65C43; }
+
+h2 {
+  color: #FFF; }
+
+h3 {
+  color: #666; }
+
+h1 {
+  font-weight: 100;
+  font-size: 4em;
+  line-height: 0; }
+
+h2 {
+  font-weight: 900;
+  font-size: 2.5em;
+  line-height: 0;
+  margin-bottom: 70px; }
+
+h3 {
+  font-weight: 400;
+  font-size: 2em;
+  line-height: 0;
+  margin-bottom: 50px; }
 
 /* CONTENT */
 #headline {
@@ -173,7 +180,8 @@ footer {
     font-size: 1.5em; }
   #content {
     width: inherit; }
-    #content #products, #content #testimonials {
+    #content #products,
+    #content #testimonials {
       width: 46%;
       margin: 0 2%; } }
 
@@ -225,10 +233,12 @@ footer {
     font-size: 1em; }
   #content h3 {
     font-size: 1.6em; }
-  .greybar, article img {
+  .greybar,
+  article img {
     display: none; }
   footer {
     text-align: center; }
-  footer p, footer img {
-    float: none;
-    margin: 0; } }
+    footer p,
+    footer img {
+      float: none;
+      margin: 0; } }

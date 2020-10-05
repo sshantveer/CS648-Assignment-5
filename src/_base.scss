@@ -1,14 +1,14 @@
 /* BASIC STYLES */
 body {
     font-family: $font-body;
-    font-size:1em;
-    line-height:2em;
-    background:url($bg-image-path) $white repeat-x;
-    margin:0;
+    font-size: 1em;
+    line-height: 2em;
+    background: url($bg-image-path) $white repeat-x;
+    margin: 0;
 }
 
 main {
-    width:940px;
-    margin:0 auto;
-    padding:0 10px;
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
 }

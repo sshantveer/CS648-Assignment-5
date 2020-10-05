@@ -11,86 +11,151 @@
 /* MEDIA QUERIES - replaced with break*/
 @include break(959px) {
     main {
-        width:768px;
+        width: 768px;
     }
+
     figure {
-        width:inherit;
-        height:140px;
-        float:none;
-        background-position:center;
+        width: inherit;
+        height: 140px;
+        float: none;
+        background-position: center;
     }
+
     nav {
-        width:inherit;
-        height:50px;
-        float:none;
-        text-align:center;
+        width: inherit;
+        height: 50px;
+        float: none;
+        text-align: center;
     }
+
     nav ul {
-        margin-top:0;
+        margin-top: 0;
+
         li {
-            font-size:1em;
-            margin:0 10px;
+            font-size: 1em;
+            margin: 0 10px;
         }
     }
+
     header h1 {
-        font-size:3em;
+        font-size: 3em;
     }
+
     header h2 {
-        font-size:1.5em;
+        font-size: 1.5em;
     }
+
     #content {
-        width:inherit;
-        #products, #testimonials {
-        width:46%;
-        margin:0 2%;
+        width: inherit;
+
+        #products,
+        #testimonials {
+            width: 46%;
+            margin: 0 2%;
+        }
     }
-    }
-    
+
 }
 
 @include break(767px) {
     main {
-        width:460px;
+        width: 460px;
     }
+
     nav ul li {
-        font-size:0.8em;
-        margin:0 5px;
+        font-size: 0.8em;
+        margin: 0 5px;
     }
+
     header h1 {
-        font-size:2em;
+        font-size: 2em;
     }
+
     header h2 {
-        font-size:1em;
+        font-size: 1em;
     }
+
     header img {
-        margin-bottom:100px;
+        margin-bottom: 100px;
     }
+
     header h3 {
-        font-size:1.5em;
+        font-size: 1.5em;
     }
+
     #headline h1 {
-        font-size:2em;padding-top:50px;
+        font-size: 2em;
+        padding-top: 50px;
     }
-    #content #products,
-    #content #testimonials {
-        width:96%;
-        margin:0 2%;
-        float:none;
+
+    #content {
+
+        #products,
+        #testimonials {
+            width: 96%;
+            margin: 0 2%;
+            float: none;
+        }
     }
 }
 
 @include break(459px) {
-    main 						{width:300px;}
-    figure						{background-size:contain;height:100px;}
-    nav							{margin-bottom:40px !important;}
-    select              		{width:95%;}
-    #headline h1 				{font-size:1.5em;padding-top:30px;}
-    header img			 		{margin-bottom:80px;}
-    header h1:first-child		{font-size:1.4em;margin-bottom:20px;}
-    header h2					{font-size:1.4em;}
-    header h3					{color:$white;font-size:1em;}
-    #content h3					{font-size:1.6em;}
-    .greybar, article img		{display:none;}
-    footer						{text-align:center;}
-    footer p, footer img 		{float:none;margin:0;}
+    main {
+        width: 300px;
+    }
+
+    figure {
+        background-size: contain;
+        height: 100px;
+    }
+
+    nav {
+        margin-bottom: 40px !important;
+    }
+
+    select {
+        width: 95%;
+    }
+
+    #headline h1 {
+        font-size: 1.5em;
+        padding-top: 30px;
+    }
+
+    header img {
+        margin-bottom: 80px;
+    }
+
+    header h1:first-child {
+        font-size: 1.4em;
+        margin-bottom: 20px;
+    }
+
+    header h2 {
+        font-size: 1.4em;
+    }
+
+    header h3 {
+        color: $white;
+        font-size: 1em;
+    }
+
+    #content h3 {
+        font-size: 1.6em;
+    }
+
+    .greybar,
+    article img {
+        display: none;
+    }
+
+    footer {
+        text-align: center;
+
+        p,
+        img {
+            float: none;
+            margin: 0;
+        }
+    }
 }
