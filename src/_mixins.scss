@@ -1,0 +1,30 @@
+@mixin setWidthHeightAndBG($width: inherit, $height: inherit, $background: none) {
+    width: $width;
+    height: $height;
+    background:$background;
+}
+
+@mixin backImage($image, $repeat: no-repeat, $position: 0 50px) {
+    background: url($image);
+    background-repeat: no-repeat;
+    background-position: $position;
+}
+
+@mixin setHeader($fontWeight, $fontSize, $lineHeight: 0) {
+    font-weight: $fontWeight;
+    font-size: $fontSize;
+    line-height: $lineHeight;
+}
+
+@mixin break($args...) {
+    @if length($args) == 1 {
+        @media (max-width: nth($args, 1)) {
+            @content;
+        }
+    } @else {
+        @media (min-width: nth($args, 1)) and 
+               (max-width: nth($args, 2)) {
+            @content;
+        }
+    }
+}

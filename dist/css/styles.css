@@ -15,7 +15,9 @@ main {
 figure {
   width: 400px;
   height: 190px;
-  background: url("../images/logo.png") no-repeat 0 50px;
+  background: url("../images/logo.png");
+  background-repeat: no-repeat;
+  background-position: 0 50px;
   float: left;
   display: block;
   margin: 0; }
@@ -23,6 +25,7 @@ figure {
 nav {
   width: 540px;
   height: 190px;
+  background: none;
   float: left;
   text-align: right; }
   nav ul {
@@ -45,22 +48,28 @@ header {
   clear: both;
   text-align: center;
   padding-top: 40px; }
+  @media (min-width: 0) and (max-width: 500px) {
+    header {
+      padding-top: 10px; } }
   header img {
     max-width: 100%;
     height: auto; }
   header h1 {
-    color: #E65C43;
+    color: #E65C43; }
+  header h2 {
+    color: #FFF; }
+  header h3 {
+    color: #666; }
+  header h1 {
     font-weight: 100;
     font-size: 4em;
     line-height: 0; }
   header h2 {
-    color: #FFF;
     font-weight: 900;
     font-size: 2.5em;
     line-height: 0;
     margin-bottom: 70px; }
   header h3 {
-    color: #666;
     font-weight: 400;
     font-size: 2em;
     line-height: 0;
@@ -73,39 +82,32 @@ header {
   background: #F25C43;
   text-align: center;
   margin: 0 auto; }
-
-#headline h1 {
-  color: #FFF;
-  font-size: 2.5em;
-  font-weight: 100;
-  padding-top: 50px; }
+  #headline h1 {
+    color: #FFF;
+    font-size: 2.5em;
+    font-weight: 100;
+    padding-top: 50px; }
 
 #content {
   width: 940px;
   margin: 20px auto; }
-
-#content h3 {
-  color: #666;
-  font-size: 2em;
-  font-weight: 400; }
-
-#content #products {
-  width: 460px;
-  float: left; }
-
-#content #products img {
-  float: left;
-  margin-right: 20px; }
-
-#content #products article {
-  margin-bottom: 40px; }
-
-#content #products h4 {
-  line-height: 1em; }
-
-#content #testimonials {
-  width: 460px;
-  float: right; }
+  #content h3 {
+    color: #666;
+    font-size: 2em;
+    font-weight: 400; }
+  #content #products {
+    width: 460px;
+    float: left; }
+    #content #products img {
+      float: left;
+      margin-right: 20px; }
+    #content #products article {
+      margin-bottom: 40px; }
+    #content #products h4 {
+      line-height: 1em; }
+  #content #testimonials {
+    width: 460px;
+    float: right; }
 
 /* FOOTER */
 .greybar {
@@ -126,31 +128,28 @@ footer {
 .social-media {
   margin: 0 auto;
   width: 165px; }
+  @media (min-width: 0) and (max-width: 500px) {
+    .social-media {
+      display: none; } }
+  .social-media div {
+    float: left;
+    margin-right: 5px; }
+  .social-media a {
+    display: block;
+    width: 36px;
+    height: 36px;
+    text-indent: -9999px; }
+  .social-media div.one {
+    background: url("../images/social-media.png") 0 0; }
+  .social-media div.two {
+    background: url("../images/social-media.png") -38px 0; }
+  .social-media div.three {
+    background: url("../images/social-media.png") -76px 0; }
+  .social-media div.four {
+    background: url("../images/social-media.png") -114px 0; }
 
-.social-media div {
-  float: left;
-  margin-right: 5px; }
-
-.social-media a {
-  display: block;
-  width: 36px;
-  height: 36px;
-  text-indent: -9999px; }
-
-.social-media div.one {
-  background: url("../images/social-media.png") 0 0; }
-
-.social-media div.two {
-  background: url("../images/social-media.png") -38px 0; }
-
-.social-media div.three {
-  background: url("../images/social-media.png") -76px 0; }
-
-.social-media div.four {
-  background: url("../images/social-media.png") -114px 0; }
-
-/* MEDIA QUERIES */
-@media screen and (max-width: 959px) {
+/* MEDIA QUERIES - replaced with break*/
+@media (max-width: 959px) {
   main {
     width: 768px; }
   figure {
@@ -165,21 +164,20 @@ footer {
     text-align: center; }
   nav ul {
     margin-top: 0; }
-  nav ul li {
-    font-size: 1em;
-    margin: 0 10px; }
+    nav ul li {
+      font-size: 1em;
+      margin: 0 10px; }
   header h1 {
     font-size: 3em; }
   header h2 {
     font-size: 1.5em; }
   #content {
     width: inherit; }
-  #content #products,
-  #content #testimonials {
-    width: 46%;
-    margin: 0 2%; } }
+    #content #products, #content #testimonials {
+      width: 46%;
+      margin: 0 2%; } }
 
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
   main {
     width: 460px; }
   nav ul li {
@@ -202,7 +200,7 @@ footer {
     margin: 0 2%;
     float: none; } }
 
-@media screen and (max-width: 459px) {
+@media (max-width: 459px) {
   main {
     width: 300px; }
   figure {

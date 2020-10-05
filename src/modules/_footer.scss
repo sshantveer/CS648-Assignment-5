@@ -1,47 +1,50 @@
 /* FOOTER */
 .greybar {
-    width:100%;
-    height:90px;
-    background:$backgroundwhite;
+    @include setWidthHeightAndBG(100%, 90px, $backgroundwhite);
     clear:both;
     padding-top:30px;
 }
 
 footer {
-    width:100%;
-    height:120px;
-    background:$backgroundgrey;
+    @include setWidthHeightAndBG(100%, 120px, $backgroundgrey);
     text-align:center;
     color:$white;
     padding-top:50px;
 }
 .social-media {
+    @include break(0, 500px) {
+        display: none;
+    }
+    
     margin:0 auto;
     width:165px;
-}
-.social-media div {
-    float:left;
-    margin-right:5px;
-}
-.social-media a {
-    display:block;
-    width:36px;
-    height:36px;
-    text-indent:-9999px;
-}
 
-.social-media div.one {
-    background:url($social-media-image-path) 0 0;
-}
+    div {
+        float:left;
+        margin-right:5px;
+    }
 
-.social-media div.two {
-    background:url($social-media-image-path) -38px 0;
-}
+    a {
+        display:block;
+        width:36px;
+        height:36px;
+        text-indent:-9999px;
+    }
 
-.social-media div.three {
-    background:url($social-media-image-path) -76px 0;
-}
+    div.one {
+        background:url($social-media-image-path) 0 0;
+    }
+    
+    div.two {
+        background:url($social-media-image-path) -38px 0;
+    }
+    
+    div.three {
+        background:url($social-media-image-path) -76px 0;
+    }
+    
+    div.four {
+        background:url($social-media-image-path) -114px 0;
+    }
 
-.social-media div.four {
-    background:url($social-media-image-path) -114px 0;
 }
